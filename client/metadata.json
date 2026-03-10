@@ -1,0 +1,5 @@
+{
+  "name": "OquMarket",
+  "description": "A personalized learning application that uses AI to create custom courses, lessons, and quizzes based on user's goals and knowledge level.",
+  "requestFramePermissions": []
+}
