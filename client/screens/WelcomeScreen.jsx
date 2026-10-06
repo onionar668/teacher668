@@ -11,7 +11,7 @@ const WelcomeScreen = ({ onStart }) => {
                 <div style={{boxShadow: '0px 4px 4px 0px #00000040'}} className="w-[128px] h-[128px] rounded-full mb-6 bg-white flex items-center justify-center">
                     <img src="/logo-welcome.svg" alt="" />
                 </div>
-                <h1 className="text-4xl font-extrabold text-gray-800 mb-2">OquMarket</h1>
+                <h1 className="text-4xl font-extrabold text-gray-800 mb-2">ProgramLingo</h1>
                 <p className="text-gray-500 text-lg">Ваш наставник рядом. Учитесь в любое время.</p>
             </div>
             <div className="w-full">

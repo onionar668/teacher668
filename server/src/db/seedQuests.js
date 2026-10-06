@@ -2,7 +2,6 @@ export const seedQuestsAndAchievements = async (db) => {
   try {
     const achievements = [];
 
-    // 1–15: достижения за завершённые курсы
     const courseTargets = [1, 2, 3, 5, 7, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50];
     courseTargets.forEach((value, idx) => {
       const i = idx + 1;
@@ -14,7 +13,6 @@ export const seedQuestsAndAchievements = async (db) => {
       });
     });
 
-    // 16–30: достижения за серию дней
     const streakTargets = [2, 3, 5, 7, 10, 14, 21, 28, 35, 42, 50, 60, 75, 90, 100];
     streakTargets.forEach((value, idx) => {
       const i = 16 + idx;
@@ -26,7 +24,6 @@ export const seedQuestsAndAchievements = async (db) => {
       });
     });
 
-    // 31–40: достижения за количество выполненных квестов
     const questTargets = [1, 3, 5, 7, 10, 15, 20, 25, 30, 35];
     questTargets.forEach((value, idx) => {
       const i = 31 + idx;
@@ -55,7 +52,6 @@ export const seedQuestsAndAchievements = async (db) => {
 
     const quests = [];
 
-    // 1–15: complete_courses
     courseTargets.forEach((value, idx) => {
       const i = idx + 1;
       quests.push({
@@ -69,7 +65,6 @@ export const seedQuestsAndAchievements = async (db) => {
       });
     });
 
-    // 16–30: lesson_streak
     streakTargets.forEach((value, idx) => {
       const i = 16 + idx;
       quests.push({
@@ -83,7 +78,6 @@ export const seedQuestsAndAchievements = async (db) => {
       });
     });
 
-    // 31–40: quests_completed
     questTargets.forEach((value, idx) => {
       const i = 31 + idx;
       quests.push({

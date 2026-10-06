@@ -175,7 +175,7 @@ const App = () => {
             }, 2000);
             return () => clearTimeout(timer);
         }
-    }, [screen, isCheckingAuth, currentUser, stats]);
+    }, [screen, isCheckingAuth, currentUser]);
 
     const navigateToScreen = useCallback((targetScreen) => {
         setScreen(targetScreen);
@@ -337,7 +337,6 @@ const App = () => {
         const newProgress = { ...(targetQuiz.progress || {}) };
         newProgress[moduleId] = passed ? 'completed' : 'failed';
 
-        // Unlock next module if passed
         if (passed) {
             const allModules = targetQuiz.program;
             const currentModuleIndex = allModules.findIndex(m => m.id === moduleId);

@@ -48,7 +48,7 @@ const AuthScreen = ({ onAuthSuccess }) => {
   return (
     <div className="flex flex-col items-center justify-between h-screen p-6 bg-gray-50">
       <header className="pt-6 pb-4 w-full text-center">
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-1">OquMarket</h1>
+        <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Teacher</h1>
         <p className="text-gray-500">
           Войдите или зарегистрируйтесь, чтобы продолжить обучение
         </p>

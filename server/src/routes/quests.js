@@ -4,7 +4,6 @@ import { authMiddleware } from '../middleware/auth.js';
 
 export const questsRouter = express.Router();
 
-// Get all quests with user status and unlocked achievements
 questsRouter.get('/', authMiddleware, async (req, res) => {
   try {
     const userId = req.user.id;
@@ -56,7 +55,6 @@ questsRouter.get('/', authMiddleware, async (req, res) => {
   }
 });
 
-// Update quest progress from client stats and auto-unlock achievements
 questsRouter.post('/sync', authMiddleware, async (req, res) => {
   const { totalCourses, completedCourses, lessonStreak, questsCompleted } = req.body || {};
   const userId = req.user.id;

@@ -70,9 +70,9 @@ const CreateCourseScreen = ({ onComplete, onExit }) => {
       text: "Чему вы хотите научиться?",
       options: [
         "Python",
-        "Kali Linux",
-        "Английский язык",
-        "Казахский язык",
+        "Go",
+        "JavaScript",
+        "C#",
         "SQL",
         "Другое",
       ],

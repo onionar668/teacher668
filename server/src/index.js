@@ -26,7 +26,6 @@ export const db = createPool({
   connectionLimit: 10,
 });
 
-// Seed initial achievements and 40 quests once
 seedQuestsAndAchievements(db);
 
 app.get('/api/health', async (_req, res) => {

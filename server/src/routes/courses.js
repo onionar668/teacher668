@@ -4,7 +4,6 @@ import { authMiddleware } from '../middleware/auth.js';
 
 export const coursesRouter = express.Router();
 
-// Save generated course for a user
 coursesRouter.post('/', authMiddleware, async (req, res) => {
   const { title, description, introduction, program, topic, isAiGenerated } = req.body || {};
 
@@ -34,7 +33,6 @@ coursesRouter.post('/', authMiddleware, async (req, res) => {
   }
 });
 
-// List user courses
 coursesRouter.get('/my', authMiddleware, async (req, res) => {
   try {
     const [rows] = await db.query(
@@ -62,7 +60,6 @@ coursesRouter.get('/my', authMiddleware, async (req, res) => {
   }
 });
 
-// Fallback predefined course when AI fails
 coursesRouter.get('/fallback', async (req, res) => {
   const { topic } = req.query || {};
   try {
